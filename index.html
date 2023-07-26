@@ -5,21 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Tailwind And DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        body, html{
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+        }
+        input{
+            outline: none!important;
+        }
 
 
     </style>
 </head>
-<body>
+<body class="bg-white h-screen px-[30px]">
 
     <!-- Header Area -->
-    <header>
+    <header class="pt-8">
+        <!-- Header Section -->
+        <section class="header bg-[#F85559] rounded-full py-4 px-6 hidden md:flex justify-between items-center text-white">
+            <!-- menu -->
+            <div class="menu">
+                <ul class="flex">
+                    <li><a href="#" class="font-medium md:px-1 lg:px-4">Home</a></li>
+                    <li><a href="#" class="font-medium md:px-1 lg:px-4">About Us</a></li>
+                    <li><a href="#" class="font-medium md:px-1 lg:px-4">Shop</a></li>
+                    <li><a href="#" class="font-medium md:px-1 lg:px-4">All Fruits</a></li>
+                </ul>
+            </div>
+            <!-- logo -->
+            <div>
+                <a href="index.html" class="logo flex items-center gap-x-1.5">
+                    <img class="w-12" src="images/logo.png" alt="logo">
+                    <span class="text-2xl font-bold">Fruit Burst</span>
+                </a>
+            </div>
+            <!-- search box -->
+            <div class="search-box relative md:w-48 lg:w-80 xl:w-96">
+                <input type="text" placeholder="Search Here" class="border-0 bg-white w-full px-4 py-2 rounded-3xl text-black">
+                <div class="search-icon absolute top-2 right-4">
+                    <i class="fa-solid fa-magnifying-glass text-[#121212;] text-sm"></i>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile Header -->
+        <section class="mobile-header block md:hidden">
+            <div class="navbar bg-white rounded-full py-4 px-6 flex justify-between items-center text-white">
+                <div class="flex-1">
+                  <!-- logo -->
+                <div>
+                    <a href="index.html" class="logo flex items-center gap-x-1.5">
+                        <img class="w-12" src="images/logo.png" alt="logo">
+                        <span class="text-2xl text-black font-bold">Fruit Burst</span>
+                    </a>
+                </div>
+                </div>
+                <div class="flex-none">
+                    <button class="btn btn-square btn-ghost text-black ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block  w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                      </button>
+                </div>
+              </div>
+        </section>
 
+        <!-- Banner Section -->
+        <section class="Banner">
+
+        </section>
     </header>
 
     <!-- Main Area -->
